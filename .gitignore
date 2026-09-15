@@ -3,4 +3,7 @@ out/
 .vscode-test/
 *.vsix
 .DS_Store
+*.docx
+build/
 sample_project/build/
+sample_project/output.txt
