@@ -1,0 +1,33 @@
+{
+  "name": "cmake-builder",
+  "displayName": "CMakeLists Generator",
+  "description": "Плагин для автоматической генерации CMakeLists.txt на основе структуры проекта C/C++",
+  "version": "1.0.0",
+  "publisher": "Lordtop4ik",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "main": "./out/main.js",
+  "activationEvents": [],
+  "contributes": {
+    "commands": [
+      {
+        "command": "cmakeGenerator.generateCMakeLists",
+        "title": "CMake Generator: Сгенерировать CMakeLists.txt"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@types/vscode": "^1.85.0",
+    "typescript": "^5.3.3"
+  }
+}
